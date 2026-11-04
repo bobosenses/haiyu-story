@@ -14,7 +14,9 @@
 
 ## 生成前
 
-1. 按 `素材槽位.md` 准备锁图与音色样片（占位文件名可改，**标签编号不要改**）。  
+锁图 A–D 已在 `refs/`（`linxia_lock.png`、`zhouyan_lock.png`、`phone_ui_mock.png`、`akai_avatar.png`）。
+
+1. 音色样片仍按 `素材槽位.md` 补齐（`audio_*_timbre.wav` 仍空）；锁图文件名保持现状，**标签编号不要改**。  
 2. 确认 `05-EP01-script.md` 对白未再改；改词必须同步改对应 `prompts/*.md` 的 `<d>[Chinese]…</d>`。  
 3. 画幅：**竖屏 9:16**；时长按每块文件头标注请求（约 5–8 秒）。
 
@@ -57,4 +59,4 @@
 
 - API Key / 账号密钥  
 - 自动推送到 GitHub（需你另行指示）  
-- 真实参考素材二进制（仅占位路径）
+- 音色 wav（`audio_*_timbre.wav` 仍空；锁图 PNG 已在 `refs/`）
