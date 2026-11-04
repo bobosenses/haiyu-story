@@ -6,7 +6,12 @@
 调研档案全文见 [`docs/dossier.md`](./docs/dossier.md)。  
 数据快照日期：**2026-11-04（Asia/Shanghai）**。星标来自当时 GitHub Search，会随时间变化。
 
-本地目录说明见 [`STRUCTURE.md`](./STRUCTURE.md)（`templates/`、`workflows/` 预留，暂无示例剧本）。
+| 想做什么 | 从这里开始 |
+|---|---|
+| 填剧本、设定、大纲、角色、场次 | [`templates/`](./templates/) |
+| 只写剧本，或写完再拆镜头 | [`workflows/`](./workflows/) |
+| 按项目看怎么装、适合谁 | [`docs/getting-started/`](./docs/getting-started/) |
+| 目录各自放什么 | [`STRUCTURE.md`](./STRUCTURE.md) |
 
 ---
 
@@ -94,10 +99,11 @@
 
 ## 推荐上手路径
 
-1. **只写剧本**：`drama-skills` 或 `short-drama` → 固定 Markdown 分集稿。  
-2. **要工业集数结构**：加上 `short-drama-factory` / 山音编剧。  
-3. **要验证出片**：Toonflow 或 LocalMiniDrama（本地） / ArcReel（网文改编+剪映）。  
-4. **持续更新名单**：盯 `awesome-manyu`。
+1. **只写剧本**：先走 [workflows/script-only.md](./workflows/script-only.md)，稿纸用 [templates/](./templates/)。工具用 [drama-skills](./docs/getting-started/drama-skills.md) 或 [short-drama](./docs/getting-started/short-drama.md)，产出固定 Markdown 分集稿。  
+2. **要工业集数结构**：加上 [short-drama-factory](./docs/getting-started/short-drama-factory.md) / 山音编剧。  
+3. **剧本锁定后再分镜**： [workflows/script-to-storyboard.md](./workflows/script-to-storyboard.md)。  
+4. **要验证出片**：[Toonflow](./docs/getting-started/toonflow.md)，或 [LocalMiniDrama / ArcReel / LumenX](./docs/getting-started/more-platforms.md)。怎么选见 [workflows/ai-pipeline-picks.md](./workflows/ai-pipeline-picks.md)。  
+5. **持续更新名单**：盯 `awesome-manyu`。
 
 通用流水线：
 
@@ -110,7 +116,7 @@
 
 ## 免责声明（第三方许可证）
 
-1. 本仓库**仅汇总公开链接与简介**，不声明对第三方代码的所有权。  
+1. 精选表汇总公开链接与简介，不声明对第三方代码的所有权。本仓库自写的模板与流程说明采用文末 CC0，**不覆盖**上游许可证。  
 2. 使用、修改、商用任何上游项目前，请自行阅读其 `LICENSE` / `NOTICE`；MIT、Apache-2.0、AGPL、CC BY-NC、Elastic 等义务差异很大。  
 3. 调用云端模型 API 会产生费用；生成内容须遵守当地法律法规与平台规范。  
 4. 星标与活跃度会变化；收录≠背书质量或可商用。  
