@@ -54,3 +54,10 @@
 - [ ] 同一角色的外形锁没有在中途被改写
 - [ ] 关键帧确认记录写在镜头表「参考」列或单独一行
 - [ ] 模型 API 费用你自己承担；本仓库不代选供应商
+
+## 7. 分镜之后写 H3 提示词
+
+镜头表确认后，视频提示词按 [h3-ref2va.md](./h3-ref2va.md) 写 MiniMax H3 全参考（Ref2VA）。
+
+- 只要音色、不要参考音频里的旧台词：用 `reference`。整段已录好的原声才用 `fully_copy`（局部沿用用 `partially_copy`）。
+- 台词只写在 `detailed_description`：说话人编号 `(S1)` `(S2)` 全程不改，中文原句保留，例如 `<Subject 1> (S1) says ... <d>[Chinese] 原句。</d>`。

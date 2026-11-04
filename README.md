@@ -10,6 +10,7 @@
 |---|---|
 | 填剧本、设定、大纲、角色、场次 | [`templates/`](./templates/) |
 | 只写剧本，或写完再拆镜头 | [`workflows/`](./workflows/) |
+| 分镜之后写 H3 视频提示词 | [`workflows/h3-ref2va.md`](./workflows/h3-ref2va.md) |
 | 按项目看怎么装、适合谁 | [`docs/getting-started/`](./docs/getting-started/) |
 | 目录各自放什么 | [`STRUCTURE.md`](./STRUCTURE.md) |
 
@@ -101,8 +102,8 @@
 
 1. **只写剧本**：先走 [workflows/script-only.md](./workflows/script-only.md)，稿纸用 [templates/](./templates/)。工具用 [drama-skills](./docs/getting-started/drama-skills.md) 或 [short-drama](./docs/getting-started/short-drama.md)，产出固定 Markdown 分集稿。  
 2. **要工业集数结构**：加上 [short-drama-factory](./docs/getting-started/short-drama-factory.md) / 山音编剧。  
-3. **剧本锁定后再分镜**： [workflows/script-to-storyboard.md](./workflows/script-to-storyboard.md)。  
-4. **要验证出片**：[Toonflow](./docs/getting-started/toonflow.md)，或 [LocalMiniDrama / ArcReel / LumenX](./docs/getting-started/more-platforms.md)。怎么选见 [workflows/ai-pipeline-picks.md](./workflows/ai-pipeline-picks.md)。  
+3. **剧本锁定后再分镜**： [workflows/script-to-storyboard.md](./workflows/script-to-storyboard.md)。视频提示词接着写 [workflows/h3-ref2va.md](./workflows/h3-ref2va.md)。  
+4. **要验证出片**：[Toonflow](./docs/getting-started/toonflow.md)，或 [LocalMiniDrama / ArcReel / LumenX](./docs/getting-started/more-platforms.md)。怎么选见 [workflows/ai-pipeline-picks.md](./workflows/ai-pipeline-picks.md)。默认视频模型路径是 MiniMax H3 Ref2VA。  
 5. **持续更新名单**：盯 `awesome-manyu`。
 
 通用流水线：
@@ -111,6 +112,14 @@
 选题/对标 → 分集地图 → 可拍剧本 → 角色/场景圣经
   → 分镜与提示词 → 生图/生视频 → TTS/字幕 → 剪映或 FFmpeg
 ```
+
+## 视频生成
+
+分镜完成之后，本仓库默认用 **MiniMax H3 全参考（Ref2VA）** 写视频提示词，规范见 [workflows/h3-ref2va.md](./workflows/h3-ref2va.md)。
+
+- 只要角色音色、不把参考音频里的旧台词带进新片：用 `reference`。整轨已录好的原声才用 `fully_copy`。
+- 台词写在 `detailed_description`，说话人用 `(Sx)`，中文原句保留。
+- 密钥、安装和接口调用以 [MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3) 上游为准，本页不另写。
 
 ---
 
