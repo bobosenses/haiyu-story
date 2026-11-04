@@ -11,6 +11,7 @@
 | 填剧本、设定、大纲、角色、场次 | [`templates/`](./templates/) |
 | 只写剧本，或写完再拆镜头 | [`workflows/`](./workflows/) |
 | 分镜之后写 H3 视频提示词 | [`workflows/h3-ref2va.md`](./workflows/h3-ref2va.md) |
+| 看一套反诈短剧成稿 | [`projects/别点那个链接/`](./projects/别点那个链接/) |
 | 按项目看怎么装、适合谁 | [`docs/getting-started/`](./docs/getting-started/) |
 | 目录各自放什么 | [`STRUCTURE.md`](./STRUCTURE.md) |
 
@@ -120,6 +121,10 @@
 - 只要角色音色、不把参考音频里的旧台词带进新片：用 `reference`。整轨已录好的原声才用 `fully_copy`。
 - 台词写在 `detailed_description`，说话人用 `(Sx)`，中文原句保留。
 - 密钥、安装和接口调用以 [MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3) 上游为准，本页不另写。
+
+## 示例项目
+
+反诈短剧《别点那个链接》第 1 集：选题、系列设定、角色卡、大纲、场次节拍、剧本、自检，以及 19 条 H3 Ref2VA 提示词。参考图和音频未附二进制。见 [`projects/别点那个链接/`](./projects/别点那个链接/)。
 
 ---
 
